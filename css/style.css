@@ -10,6 +10,10 @@
 :root{
     /* colors */
     --color-primary: #D40029;
+    
+    /* background */
+    --color-bg-main: #efeff0;
+    --color-bg-light: #f2f2f2;
 
     /* fonts */
      /* weight */
@@ -20,12 +24,20 @@
     --font-size-small: 13px;
     --font-size-normal: 16px;
     --font-size-big: 19px;
+    --font-size-bigger: 28px;
+    --font-size-extreme: 35px;
     /*color*/
     --font-color-normal: rgb(36, 36, 36);
-} 
+    --font-color-light: #ffffff;
+}
+
+/* modifier classes */
+.bolded{
+    font-weight: var(--font-weight-big);
+}
 
 html{
-    background-color: grey;
+    background-color: var(--color-bg-main);
     height: 100%;
 }
 
@@ -245,5 +257,90 @@ body{
 
     .header__content__nav__site-links__inner > .site-links > .site-links-item > a:hover{
         color: var(--color-primary);
+    }
+}
+
+
+/* MAIN */
+.main{
+    min-height: 600px;
+    width: 100%;
+}
+.main__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main__banner__inner{
+    width: 100%;
+    max-width: 1240px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0,0.6), rgb(0, 0, 0, 0.6)),url('../images/banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main__banner__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__banner__text__inner{
+    max-width: 600px;
+}
+
+.main__banner__text__logo{
+    padding: 25px 0;
+}
+
+.main__banner__text__logo__inner{
+    position: relative;
+    width: 500px;
+    height: 310px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__banner__text__logo__inner > img{
+    position: absolute;
+    width: 750px;
+    height: 750px;
+}
+
+.main__banner__text__content__inner{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-big);
+    text-align: center;
+    color: var(--font-color-light);
+    font-size: var(--font-size-big);
+}
+
+.main__banner__text__content__inner > .bigger{
+    font-size: var(--font-size-bigger);
+    font-weight: var(--font-weight-big);
+    margin-bottom: 5px;
+}
+
+/* header media query */
+@media screen and (min-width:800px){
+    .main__banner__inner{
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .main__banner__text{
+        align-items: flex-end;
+        padding: 0 50px;
     }
 }
