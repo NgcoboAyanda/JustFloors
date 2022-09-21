@@ -461,10 +461,6 @@ body{
     margin-bottom: var(--margin-small);
 }
 
-.main__about-us__content__actions{
-    flex: 0 0 305px;
-}
-
 .main__about-us__content__actions__inner{
     display: flex;
     flex-direction: column;
@@ -533,6 +529,11 @@ body{
     .main__about-us__content__text{
         max-width: 550px;
     }
+
+    .main__about-us__content__actions{
+        flex: 0 0 305px;
+    }
+    
 
     .main__about-us__content__actions__inner{
         margin-top: 54px;
