@@ -20,6 +20,7 @@
     /* background */
     --color-bg-main: #efeff0;
     --color-bg-light: #f2f2f2;
+    --color-bg-mid: #373536;
 
     /* fonts */
      /* weight */
@@ -475,7 +476,21 @@ body{
 .main__reviews{
     width: 100%;
     padding: 0 var(--margin-small);
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-bg-mid);
+    min-height: 400px;
+    color: var(--font-color-light);
+}
+
+.main__reviews__inner{
+    margin: var(--margin-large) 0;
+    width: 100%;
+    max-width: var(--max-section-width);
+}
+
+.main__reviews__heading{
+    text-align: center;
 }
 
 /* main media query */
@@ -533,7 +548,6 @@ body{
     .main__about-us__content__actions{
         flex: 0 0 305px;
     }
-    
 
     .main__about-us__content__actions__inner{
         margin-top: 54px;
