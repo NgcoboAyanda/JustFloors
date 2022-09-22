@@ -43,27 +43,10 @@
 
     /* elements */
     --max-section-width: 1000px;
-}
 
-/* modifier classes */
-.bolded{
-    font-weight: var(--font-weight-big);
-}
-
-.heading{
-    font-weight: var(--font-weight-bigger);
-}
-
-.heading_small{
-    font-size: var(--font-size-bigger);
-}
-
-.heading_big{
-    font-size: var(--font-size-extreme);
-}
-
-.paragraph{
-    font-size: var(--font-size-big);
+    /* svg sizes */
+    --svg-size-small: 25px;
+    --svg-size-mid: 32px;
 }
 
 html{
@@ -76,6 +59,92 @@ body{
     position: relative;
     overflow-x: hidden;
     font-family: var(--font-family-default);
+}
+
+/* buttons, links, input element styles */
+
+    /* default text styles */
+    .heading{
+        font-weight: var(--font-weight-bigger);
+    }
+    
+    .heading_small{
+        font-size: var(--font-size-bigger);
+    }
+    
+    .heading_big{
+        font-size: var(--font-size-extreme);
+    }
+
+    /* link-btn is a link element that is styled to look like a button */
+.link-btn{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    width: auto;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.link-btn_filled{
+    font-size: var(--font-size-bigger);
+    background-color: var(--color-primary-light);
+    color: var(--font-color-light);
+    outline: 1px solid currentColor;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.192);
+    padding: 0 35px;
+}
+
+.link-btn_filled:hover{
+    color: var(--font-color-normal);
+    background-color: var(--font-color-light);
+}
+
+.link-btn_hollow{
+    background-color: transparent;
+    color: var(--font-color-normal);
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    font-weight: var(--font-weight-big);
+    padding: 37px 35px;
+}
+
+.link-btn_hollow:hover{
+    color: var(--font-color-light);
+    background-color: var(--color-primary-light);
+    border: 1px solid var(--font-color-normal);
+}
+
+    /* default button styles */
+.button{
+    border: none;
+    cursor: pointer;
+}
+    /* this is a button that contains an icon inside */
+.button_icon{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: var(--svg-size-mid);
+}
+
+.button_icon > svg{
+    height: 100%;
+    fill: currentColor;
+}
+
+.button_icon_clickable{
+    color: var(--color-secondary);
+}
+
+.button_icon_unclickable{
+    color: var(--color-secondary-light);
+    cursor: not-allowed;
+}
+
+
+.paragraph{
+    font-size: var(--font-size-big);
 }
 
 /* HEADER */
@@ -392,44 +461,6 @@ body{
     justify-content: center;
 }
 
-.link-btn{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    height: 60px;
-    width: auto;
-    transition: background-color 0.15s ease-in-out;
-}
-
-.link-btn_filled{
-    font-size: var(--font-size-bigger);
-    background-color: var(--color-primary-light);
-    color: var(--font-color-light);
-    outline: 1px solid currentColor;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.192);
-    padding: 0 35px;
-}
-
-.link-btn_filled:hover{
-    color: var(--font-color-normal);
-    background-color: var(--font-color-light);
-}
-
-.link-btn_hollow{
-    background-color: transparent;
-    color: var(--font-color-normal);
-    border: 1px solid currentColor;
-    border-radius: 6px;
-    font-weight: var(--font-weight-big);
-    padding: 37px 35px;
-}
-
-.link-btn_hollow:hover{
-    color: var(--font-color-light);
-    background-color: var(--color-primary-light);
-    border: 1px solid var(--font-color-normal);
-}
-
 .main__about-us{
     display: flex;
     justify-content: center;
@@ -508,7 +539,7 @@ body{
 }
 
 .main__reviews__content__rating__inner > .star > svg {
-    height: 25px;
+    height: var(--svg-size-small);
     fill: var(--color-secondary);
 }
 
@@ -516,12 +547,27 @@ body{
     max-width: 680px;
     margin-top: var(--margin-mid);
     font-weight: var(--font-weight-big);
+    text-align: center;
 }
 
 .main__reviews__content__reviewer{
     font-size: var(--font-size-normal);
     margin-top: var(--margin-mid);
     font-weight: var(--font-weight-big);
+}
+
+.main__reviews__content__actions{
+    margin-top: var(--margin-mid);
+}
+
+.main__reviews__content__actions__inner{
+    display: flex;
+}
+
+.main__reviews__content__actions__counter{
+    margin: 0 var(--margin-small);
+    display: flex;
+    align-items: center;
 }
 
 /* main media query */
