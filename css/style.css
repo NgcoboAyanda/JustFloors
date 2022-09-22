@@ -11,6 +11,9 @@
     /* colors */
     --color-primary: #D40029;
     --color-primary-light: #e1251a;
+    
+    --color-secondary: #fbe201;
+    --color-secondary-light: #726925;
 
     /* margin */
     --margin-small: 15px;
@@ -492,6 +495,33 @@ body{
 
 .main__reviews__heading{
     text-align: center;
+}
+
+.main__reviews__content{
+}
+
+.main__reviews__content__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-large);
+}
+
+.main__reviews__content__rating__inner > .star > svg {
+    height: 25px;
+    fill: var(--color-secondary);
+}
+
+.main__reviews__content__review{
+    max-width: 680px;
+    margin-top: var(--margin-mid);
+    font-weight: var(--font-weight-big);
+}
+
+.main__reviews__content__reviewer{
+    font-size: var(--font-size-normal);
+    margin-top: var(--margin-mid);
+    font-weight: var(--font-weight-big);
 }
 
 /* main media query */
