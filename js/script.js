@@ -119,7 +119,10 @@ prevReviewBtn.addEventListener('click', e=>{
         let theReview = getReview(reviewIndex);
         renderReview(theReview);
         renderReviewCounter(reviewIndex);
-        enableBtn(nextReviewBtn);
+        if(reviewIndex < reviews.length){
+            //if this is not the last review
+            enableBtn(nextReviewBtn);
+        }
         if(reviewIndex === 1){
             //if we are on the first review then we want to disable the prevReviewBtn
             disableBtn(prevReviewBtn);
