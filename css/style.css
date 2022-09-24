@@ -126,22 +126,18 @@ body{
     display: flex;
     align-items: center;
     height: var(--svg-size-mid);
+    color: var(--color-secondary-light);
 }
 
 .button_icon > svg{
     height: 100%;
     fill: currentColor;
+    pointer-events: none;
 }
 
 .button_icon_clickable{
     color: var(--color-secondary);
 }
-
-.button_icon_unclickable{
-    color: var(--color-secondary-light);
-    cursor: not-allowed;
-}
-
 
 .paragraph{
     font-size: var(--font-size-big);
