@@ -546,6 +546,11 @@ body{
     text-align: center;
 }
 
+.main__reviews__content__review__inner > .paragraph{
+    display: block;
+    min-height: 85px;
+}
+
 .main__reviews__content__reviewer{
     font-size: var(--font-size-normal);
     margin-top: var(--margin-mid);
