@@ -396,8 +396,9 @@ body{
     max-width: 600px;
 }
 
+/*
 .main__banner__text__logo{
-}
+} */
 
 .main__banner__text__logo__inner{
     position: relative;
@@ -524,8 +525,9 @@ body{
     text-align: center;
 }
 
+/*
 .main__reviews__content{
-}
+} */
 
 .main__reviews__content__inner{
     display: flex;
