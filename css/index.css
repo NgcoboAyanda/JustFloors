@@ -346,7 +346,7 @@
 
 .main__projects__content__item__info{
     margin-top: var(--margin-small);
-    font-size: var(--font-size-bigger);
+    font-size: var(--font-size-big);
     color: var(--font-color-normal);
     font-weight: var(--font-weight-big);
 }
