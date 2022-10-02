@@ -548,7 +548,7 @@ body{
 
 .main__reviews__content__review__inner > .paragraph{
     display: block;
-    min-height: 85px;
+    min-height: 144px;
 }
 
 .main__reviews__content__reviewer{
@@ -614,6 +614,23 @@ body{
 }
 
 
+.main__projects__content__item__image{   
+    height: 500px;
+}
+
+.main__projects__content__item__image__inner{
+    height: 100%;
+}
+
+.main__projects__content__item__image__inner > .image {
+    height: 100%;
+    width: 100%;
+}
+
+.main__projects__content__item__info{
+    flex: 1;
+}
+
 /* main media query */
 @media screen and (min-width:800px){
     .main__banner__inner{
@@ -674,6 +691,10 @@ body{
         margin-top: 54px;
     }
     
+    .main__reviews__content__review__inner > .paragraph{
+        min-height: 86px;
+    }
+
     .main__projects__content__inner{
         flex-direction: row;
         align-items: flex-start;
