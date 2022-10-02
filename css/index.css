@@ -346,7 +346,7 @@
 
 .main__projects__content__item__info{
     margin-top: var(--margin-small);
-    font-size: var(--font-size-big);
+    font-size: var(--font-size-bigger);
     color: var(--font-color-normal);
     font-weight: var(--font-weight-big);
 }
@@ -359,10 +359,11 @@
 .main__projects__content__item__info__content__inner > .icon{
     display: flex;
     align-items: center;
+    margin-right: 8px;
 }
 
 .main__projects__link{
-    margin: var(--margin-small) 0;
+    margin: var(--margin-mid) 0;
     font-weight: var(--font-weight-big);
 }
 
