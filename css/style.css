@@ -386,7 +386,14 @@ body{
 }
 
 .footer__links{
-    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__links__inner{
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
 }
 
 .footer__links__content{
@@ -396,6 +403,17 @@ body{
 
 .footer__links__content__inner > *:not(:first-child){
     margin-top: 5px;
+}
+
+.footer__social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-media__inner{
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
 }
 
 .footer__social-media__content{
@@ -411,5 +429,6 @@ body{
     .footer__inner{
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
     }
 }
