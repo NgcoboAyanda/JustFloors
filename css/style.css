@@ -346,7 +346,7 @@ body{
 }
 
 .footer__logo{
-    width: 350px;
+    width: 300px;
 }
 
 .footer__logo__inner{
@@ -430,5 +430,13 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    .footer__links{
+        max-width: 220px;
+    }
+
+    .footer__social-media{
+        max-width: 220px;
     }
 }
