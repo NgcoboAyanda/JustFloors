@@ -60,7 +60,7 @@
 }
 
 .main__sidebar__links{
-    margin-top: var(--margin-mid);
+    margin: var(--margin-mid) 0;
 }
 
 .main__sidebar__links__inner > a:not(:first-child){

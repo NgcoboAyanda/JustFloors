@@ -175,7 +175,6 @@ body > main {
     width: 100%;
     padding: 0 15px;
     overflow: hidden;
-    border-bottom: 1px solid rgb(238, 238, 238);
     position: relative;
     z-index: 3;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.308);
@@ -229,6 +228,10 @@ body > main {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.header__content__nav__inner{
+    height: 100%;
 }
 
 /* mobile menu */
@@ -302,10 +305,11 @@ body > main {
     .header{
         display: flex;
         justify-content: center;
+        height: 120px;
     }
 
     .header__inner{
-        padding: 10px 15px;
+        padding: 0 15px;
         height: 120px;
     }
 
@@ -323,6 +327,7 @@ body > main {
     }
 
     .header__content__nav{
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: flex-end;
@@ -334,7 +339,9 @@ body > main {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        justify-content: space-between;
         width: 100%;
+        height: 121px;
     }
     
     .header__content__nav__contact{
@@ -377,7 +384,7 @@ body > main {
         max-width: 520px;
         height: 70px;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
     .header__content__nav__site-links__inner{
         width: 100%;
@@ -387,8 +394,19 @@ body > main {
         display: flex;
         justify-content: space-between;
     }
-    .header__content__nav__site-links__inner > .site-links > .site-links-item > a {
+
+    .header__content__nav__site-links__inner > .site-links > .site-links-item{
+        padding-bottom: 15px;
         color: var(--font-color-normal);
+    }
+
+    .header__content__nav__site-links__inner > .site-links > .current-link{
+        border-bottom: 4px solid var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .header__content__nav__site-links__inner > .site-links > .site-links-item > a {
+        color: currentColor;
         text-decoration: none;
     }
 
@@ -536,12 +554,12 @@ body > main {
 @media screen and (min-width: 800px){
     .footer__content__inner{
         flex-direction: row;
-        justify-content: space-between;
         align-items: flex-start;
     }
 
     .footer__links{
-        max-width: 220px;
+        max-width: 400px;
+        margin-left: auto;
     }
 
     .footer__content__inner{
