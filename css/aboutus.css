@@ -1,0 +1,52 @@
+/* contains styling for aboutus.html */
+
+@import "./style.css"; /* base css styling*/
+
+.main{
+    width: 100%;
+    padding: 0 var(--margin-small);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: var(--font-color-normal);
+}
+
+.main__inner{
+    padding: var(--margin-large) 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-section-width);
+}
+
+.main__content{
+    flex: 6;
+    padding: 0 var(--margin-small);
+}
+
+.main__sidebar{
+    flex: 5;
+}
+
+.main__content__paragraph{
+    margin-top: var(--margin-mid);
+}
+
+.main__content__paragraph__text{
+    margin-top: var(--margin-small);
+}
+
+.main__content__paragraph__text__inner > .text-block{
+    display: block;
+}
+
+.main__content__paragraph__text__inner > .text-block:not(:first-child){
+    margin-top: var(--margin-small) !important;
+}
+
+@media screen and (min-width: 800px){
+
+    .main__inner{
+        flex-direction: row;
+    }
+}
