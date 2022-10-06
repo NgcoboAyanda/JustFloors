@@ -381,7 +381,7 @@ body > main {
     .header__content__nav__site-links{
         color: var(--font-color-normal);
         width: 65%;
-        max-width: 520px;
+        max-width: 450px;
         height: 70px;
         display: flex;
         align-items: flex-end;
