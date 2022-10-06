@@ -166,6 +166,10 @@ body > main {
     font-size: var(--font-size-big);
 }
 
+.paragraph_highlight{
+    font-weight: var(--font-weight-big);
+}
+
 /* HEADER */
 .header{
     width: 100%;

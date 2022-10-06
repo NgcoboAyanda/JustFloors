@@ -44,6 +44,29 @@
     margin-top: var(--margin-small) !important;
 }
 
+.main__content__highlight{
+    margin: var(--margin-mid) 0;
+    border-top: 1px solid var(--color-primary-light);
+    border-bottom: 1px solid var(--color-primary-light);
+    padding: var(--margin-mid);
+}
+
+.main__sidebar{
+    padding: 0 var(--margin-small);
+}
+
+.main__sidebar__image__inner > img{
+    width: 100%;
+}
+
+.main__sidebar__links{
+    margin-top: var(--margin-mid);
+}
+
+.main__sidebar__links__inner > a:not(:first-child){
+    margin-top: var(--margin-small);
+}
+
 @media screen and (min-width: 800px){
 
     .main__inner{
