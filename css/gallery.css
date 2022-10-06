@@ -1,0 +1,12 @@
+/* contains styling for aboutus.html */
+
+@import "./style.css"; /* base css styling*/
+@import "./aboutus.css";
+
+.main__content__paragraph__text__image__inner{
+    margin-top: var(--margin-large);
+}
+
+.main__content__paragraph__text__image__inner > img{
+    width: 100%;
+}
